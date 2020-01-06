@@ -1,0 +1,79 @@
+.grid{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-gap: 20px;
+    width: fit-content;
+    margin: auto;
+    height: 100vh;
+    align-content: center;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.grid div{
+    display: grid;
+    align-content: center;
+    border: 1px gray solid;
+    border-radius: 50%;
+    text-align: center  ;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.grid div:nth-child(18){
+    border-radius: 40%;
+}
+.grid div:nth-child(22){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid div:nth-child(23){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.grid input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: end;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.grid input {
+    outline: none;
+}
+.number{
+    background-color: gray;
+    color: white;
+}
+.grid .symbol{
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+.active {
+    color: orange !important;
+    background-color: white !important;
+}
+
+.grid .action{
+    background-color: lightgrey;
+}
+#history{
+    color: white;
+    align-content: center;
+    text-align: center  ;
+    vertical-align: middle;
+    font-size: 30px;
+    height: 100vh   ;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center  ;
+    vertical-align: middle;
+}

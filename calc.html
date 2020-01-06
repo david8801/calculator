@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<div class="row">
+<div class="grid">
+    <input value="0" onblur="this.focus()" autofocus id="input"  />
+    <div onclick="AC()" class="action">AC</div>
+    <div class="action" onclick="negative(this.id)" id="negative">+/-</div>
+    <div class="action" onclick="percent()">%</div>
+    <div onclick="symbol(this.innerHTML, this.id)" id="divide" class="symbol">÷</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">7</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">8</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">9</div>
+    <div onclick="symbol(this.innerHTML, this.id)" id="multiple" class="symbol">×</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">4</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">5</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">6</div>
+    <div onclick="symbol(this.innerHTML, this.id)" id="minus" class="symbol">-</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">1</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">2</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">3</div>
+    <div onclick="symbol(this.innerHTML, this.id)" id="plus" class="symbol">+</div>
+    <div onclick="counts(addNum(this.innerHTML))" class="number">0</div>
+    <div onclick="addNum(this.innerHTML)" class="number">.</div>
+    <div class="action" onclick="crop()" ><</div>
+    <div onclick="enter++;addNum(this.innerHTML);" id="equal" class="symbol">=</div>
+    <div onclick="counts(this.innerHTML)" id="left" class="action">←</div>
+    <div onclick="counts(this.innerHTML)" class="action">→</div>
+</div>
+<div id="history">
+    <p>Calculation History:</p>
+</div>
+</div>
+
+
+<script src="calc.js"></script>
+</body>
+</html>
